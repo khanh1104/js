@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog Home - EasyMeals</title>
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css" />
+    <link rel="icon" type="image/x-icon" href="../Project/Sources/Assets/Icon/cropped-Favicon-1-32x32.png" />
+    <link rel="stylesheet" href="/JSB-01/Project/Sources/Style/CSS/login.css" />
+</head>
+
+<body>
+    <header>
+        <a href="https://easymeals.qodeinteractive.com/"><img
+                src="https://easymeals.qodeinteractive.com/wp-content/uploads/2020/06/logo_home2.png" id="logo" /></a>
+        <div id="search">
+            <form id="search_bar">
+                <input type="text" placeholder="Search" id="searchInput" required />
+                <button id="search_bar_button" type="submit"
+                    onclick="window.open('http://easymeals.qodeinteractive.com/?s=' + document.getElementById('searchInput').value,'_blank')">
+                    <i class="fi fi-rs-search" id="search_bar_ico"></i>
+                </button>
+            </form>
+        </div>
+        <div id="opt">
+            <a href="../Project/Sources/HTML/login.html" id="favorites"><i class="fi fi-rs-sign-in-alt"></i>‎‎‎
+                Login</a>
+            <p id="i">|</p>
+            <div id="cart">
+                <a href="https://easymeals.qodeinteractive.com/cart/"><span>Cart ($0.00)</span></a>
+                <div id="cart_dropdown">
+                    <p>No products in the cart.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div id="nav">
+            <a href="https://easymeals.qodeinteractive.com/" class="nav_link">home</a>
+            <a href="https://easymeals.qodeinteractive.com/all-recipes/" class="nav_link">recipes <i
+                    class="fi fi-ss-star" id="star"></i></a>
+            <a href="https://easymeals.qodeinteractive.com/forums/" class="nav_link">forum</a>
+            <a href="https://easymeals.qodeinteractive.com/shop/" class="nav_link">shop</a>
+            <a href="https://easymeals.qodeinteractive.com/about/" class="nav_link">about</a>
+            <a href="https://easymeals.qodeinteractive.com/contact/" class="nav_link">contact</a>
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com/QodeInteractive/?_ga=2.180626722.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-instagram"></i></a>
+            <a href="https://twitter.com/qodeinteractive?_ga=2.177350688.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-twitter"></i></a>
+            <a href="https://www.facebook.com/QodeInteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-facebook"></i></a>
+            <a href="https://www.pinterest.com/qodeinteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-pinterest"></i></a>
+            <a href="https://www.youtube.com/QodeInteractiveVideos?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-youtube"></i></a>
+            <a href="https://linkedin.com" class="social"><i class="fi fi-brands-linkedin"></i></a>
+        </div>
+    </nav>
+    <div id="main">
+        <p id="title">Login</p>
+        <div id="username" class="input_container">
+            <abbr title="Please fill out this field"><input type="text" id="username_input" placeholder="User Name *" class="input" maxlength="1000" autocomplete="username" required><i class="fi fi-rr-smile sign" id="smile"></i></abbr>
+        </div>
+        <div id="password" class="input_container">
+            <abbr title="Please fill out this field"><input type="password" id="password_input" placeholder="Password *" class="input" maxlength="1000" autocomplete="current-password" required><i class="fi fi-rs-lock sign" id="lock"></i></abbr>
+        </div>
+        <input type="checkbox" name="" id="remember"> Remember me
+        <button id="forgot">forgot password? <i class="fi fi-rs-arrow-right arrow"></i></button>
+        <button id="submit" onclick="login()"><i class="fi fi-rs-user user"></i> Login</button>
+        <p id="error"></p>
+    </div>
+    <footer>
+        <p id="copyright">© 2020 Qode Interactive, All Rights Reserved</p>
+        <div id="navigation">
+            <a href="https://easymeals.qodeinteractive.com/" class="link">home</a>
+            <a href="https://easymeals.qodeinteractive.com/all-recipes/" class="link">recipes</a>
+            <a href="https://easymeals.qodeinteractive.com/shop/" class="link">shop</a>
+            <a href="https://easymeals.qodeinteractive.com/about/" class="link">about</a>
+            <a href="https://easymeals.qodeinteractive.com/contact/" class="link">contact</a>
+        </div>
+        <div id="soc">
+            <a
+                href="https://www.instagram.com/QodeInteractive/?_ga=2.180626722.424795386.1668695321-520727003.1667702456" class="social"><i
+                    class="fi fi-brands-instagram"></i></a>
+            <a href="https://twitter.com/qodeinteractive?_ga=2.177350688.424795386.1668695321-520727003.1667702456" class="social"><i
+                    class="fi fi-brands-twitter"></i></a>
+            <a
+                href="https://www.facebook.com/QodeInteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456" class="social"><i
+                    class="fi fi-brands-facebook"></i></a>
+            <a
+                href="https://www.pinterest.com/qodeinteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456" class="social"><i
+                    class="fi fi-brands-pinterest"></i></a>
+            <a
+                href="https://www.youtube.com/QodeInteractiveVideos?_ga=2.202057364.424795386.1668695321-520727003.1667702456" class="social"><i
+                    class="fi fi-brands-youtube"></i></a>
+            <a href="https://linkedin.com" class="social"><i class="fi fi-brands-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="../Project/Sources/Script/JavaScript/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    z-index: 1;
+}
+
+.link {
+    float: left;
+}
+
+.link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+}
+
+a.link:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#home {
+    background-image: url(/L4/Assets/Image/img_la.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#search {
+    height: 100%;
+}
+
+#city {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 15%;
+    left: 46%;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#desc {
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 15px;
+    bottom: 8%;
+    left: 38%;
+    font-weight: bolder;
+}
+
+#band {
+    height: 100vh;
+    padding-top: 1%;
+}
+
+.band_text {
+    text-align: center;
+}
+
+.title {
+    letter-spacing: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+
+.p {
+    font-style: italic;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    margin-bottom: 2%;
+}
+
+#band_p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#paragraph {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    margin-left: 23%;
+    margin-right: 23%;
+    line-height: 1.5;
+}
+
+#band_member {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.band_member_name {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    margin-bottom: 7%;
+    margin-top: 20%;
+}
+
+.band_member_img {
+    width: 60%;
+}
+
+#tour {
+    height: 125vh;
+    background-color: black;
+    padding-top: 1%;
+    text-align: center;
+}
+
+#tour_title {
+    color: white;
+}
+
+#tour_p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.month {
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+    margin-left: 23%;
+    margin-right: 23%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.sold_out {
+    margin-left: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #f44336;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.month_text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    color: #757575;
+    font-size: 14px;
+}
+
+#remain_tickets {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: black;
+    margin-right: 16px;
+    color: white;
+}
+
+#November {
+    display: flex;
+    justify-content: space-between;
+}
+
+.place {
+    background: linear-gradient(0deg, #FFF 52%, #000 52%);
+    width: 220px;
+    text-align: left;
+}
+
+#concert_place {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-top: 2%;
+}
+
+.place_image {
+    width: 220px;
+    height: auto;
+}
+
+.place_image:hover {
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.place_name {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+.concert_time {
+    margin-left: 7%;
+    margin-top: 7%;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.concert_description {
+    margin-left: 7%;
+    margin-top: 7%;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.buy_button {
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-bottom: 6%;
+    background-color: black;
+    padding: 4%;
+    border: 0;
+}
+
+.buy_button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+a:hover {
+    color: #000;
+}
+
+.buy_button a {
+    text-decoration: none;
+    color: white;
+}
+
+#contact {
+    height: 50vh;
+    text-align: center;
+}
+
+#contact_p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#contact_detail {
+    display: flex;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.info {
+    display: flex;
+    text-align: left;
+}
+
+.info_text {
+    margin-left: 15%;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    margin-left: 6%;
+    margin-bottom: 2%;
+}
+
+#contact_info {
+    width: 50%;
+}
+
+#form {
+    width: 50%;
+}
+
+#form1 {
+    display: flex;
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 8px;
+}
+
+.input:not(#Message) {
+    width: 50%;
+}
+
+#message {
+    width: 200%;
+}
+
+#message {
+    width: 100% !important;
+    margin-top: 1%;
+}
+
+#email {
+    margin-left: 4%;
+}
+
+#form2 {
+    vertical-align: middle;
+}
+
+#submit {
+    float: right;
+    border: 0px;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 16px;
+}
+
+#submit:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#submit a {
+    font-size: 12px;
+}
+
+#footer_img {
+    filter: grayscale(50%);
+    width: 100%;
+    height: 125vh;
+}
+
+#footer_img_container {
+    z-index: -1;
+}
+
+#footer {
+    height: 30vh;
+}
+
+#platform {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px !important;
+    padding-bottom: 30px !important;
+}
+
+.icon {
+    color: #777;
+    margin-left: 3px;
+}
+
+#credit_text a {
+    color: #666;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+#credit_text {
+    color: #666;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+#credit {
+    margin-bottom: 50%;
+    width: 100%;
+    text-align: center;
+}

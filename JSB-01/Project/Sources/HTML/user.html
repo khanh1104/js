@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog Home - EasyMeals</title>
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css" />
+    <link rel="icon" type="image/x-icon" href="/JSB-01/Project/Sources/Assets/Icon/cropped-Favicon-1-32x32.png" />
+    <link rel="stylesheet" href="/JSB-01/Project/Sources/Style/CSS/style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="https://easymeals.qodeinteractive.com/"><img
+                src="https://easymeals.qodeinteractive.com/wp-content/uploads/2020/06/logo_home2.png" id="logo" /></a>
+        <div id="search">
+            <form id="search_bar">
+                <input type="text" placeholder="Search" id="searchInput" required />
+                <button id="search_bar_button" type="submit"
+                    onclick="window.open('http://easymeals.qodeinteractive.com/?s=' + document.getElementById('searchInput').value,'_blank')">
+                    <i class="fi fi-rs-search" id="search_bar_ico"></i>
+                </button>
+            </form>
+        </div>
+        <div id="opt">
+            <a href="/JSB-01/Project/Sources/HTML/index.html" id="favorites"><i class="fi fi-rs-sign-out-alt"></i>‎‎‎
+                Logout</a>
+            <p id="i">|</p>
+            <div id="cart">
+                <a href="https://easymeals.qodeinteractive.com/cart/"><span>Cart ($0.00)</span></a>
+                <div id="cart_dropdown">
+                    <p>No products in the cart.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div id="nav">
+            <a href="https://easymeals.qodeinteractive.com/" class="nav_link">home</a>
+            <a href="https://easymeals.qodeinteractive.com/all-recipes/" class="nav_link">recipes <i
+                    class="fi fi-ss-star" id="star"></i></a>
+            <a href="https://easymeals.qodeinteractive.com/forums/" class="nav_link">forum</a>
+            <a href="https://easymeals.qodeinteractive.com/shop/" class="nav_link">shop</a>
+            <a href="https://easymeals.qodeinteractive.com/about/" class="nav_link">about</a>
+            <a href="https://easymeals.qodeinteractive.com/contact/" class="nav_link">contact</a>
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com/QodeInteractive/?_ga=2.180626722.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-instagram"></i></a>
+            <a href="https://twitter.com/qodeinteractive?_ga=2.177350688.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-twitter"></i></a>
+            <a href="https://www.facebook.com/QodeInteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-facebook"></i></a>
+            <a href="https://www.pinterest.com/qodeinteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-pinterest"></i></a>
+            <a href="https://www.youtube.com/QodeInteractiveVideos?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-youtube"></i></a>
+            <a href="https://linkedin.com" class="social"><i class="fi fi-brands-linkedin"></i></a>
+        </div>
+    </nav>
+    <div id="most_popular_recipes">
+        <div id="detail">
+            <div id="tags">
+                <p><i class="fi fi-rs-video-camera-alt" id="time"></i> 0:38</p>
+                <a href="https://easymeals.qodeinteractive.com/recipe-category/pies/" id="tag">
+                    <p><i class="fi fi-rs-label"></i> Pies</p>
+                </a>
+            </div>
+            <a href="https://easymeals.qodeinteractive.com/recipe/mixed-berry-pie-with-fresh-berries/" id="name">
+                <p>Mixed berry pie with fresh fruits</p>
+            </a>
+            <p id="description">
+                Lorem ipsum dolor sit amen, consectetuipisicing elite, sed do elusion
+                tempore incident ut laborer et dolores magna aliquot enid ad mi
+            </p>
+        </div>
+        <div id="author">
+            <a href="https://easymeals.qodeinteractive.com/author/laura-dern/"><img
+                    src="/JSB-01/Project/Sources/Assets/Image/Author Image/author-img-2-100x100.png" alt=""
+                    id="avatar" /></a>
+            <div id="info">
+                <a href="https://easymeals.qodeinteractive.com/author/laura-dern/" id="author_name">
+                    <p>laura dern</p>
+                </a>
+                <p id="date">may 20, 2020</p>
+            </div>
+            <div id="activities">
+                <abbr title="Like this"><i class="fi fi-rs-heart activity" id="heart"></i></abbr>
+                <abbr title="Add to favourites"><i class="fi fi-rs-bookmark activity" id="bookmark"></i></abbr>
+            </div>
+        </div>
+    </div>
+    <div id="popular_recipes">
+        <div class="recipes">
+            <a href="https://easymeals.qodeinteractive.com/recipe/40-mothers-day-breakfast-and-brunch-recipes/"><img
+                    src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-1.jpg" alt=""
+                    class="recipes_image" /></a>
+            <div class="recipes_tag">
+                <p class="recipes_time">
+                    <i class="fi fi-tr-clock-three"></i> 30 minutes
+                </p>
+                <p class="recipes_difficulty">
+                    <i class="fi fi-rs-social-network"></i> super easy
+                </p>
+            </div>
+            <p class="recipes_title">
+                <a href="https://easymeals.qodeinteractive.com/recipe/40-mothers-day-breakfast-and-brunch-recipes/">40
+                    Mother's Day Breakfast and Brunch Recipes</a>
+            </p>
+            <p class="recipes_description">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqut enim ad minim
+                veniamquis
+            </p>
+            <div class="recipes_author">
+                <a href="https://easymeals.qodeinteractive.com/author/taylor-kinny/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Author Image/Untitled-2-100x100.png" alt=""
+                        class="recipes_author_avatar" /></a>
+                <div class="recipes_author_info">
+                    <p class="recipes_author_name">
+                        <a href="https://easymeals.qodeinteractive.com/author/taylor-kinny/">taylor kinny</a>
+                    </p>
+                    <p class="recipes_date">may 20, 2020</p>
+                </div>
+                <div class="recipes1_activities">
+                    <i class="fi fi-rs-share recipes_activities recipes_heart"></i>
+                    <i class="fi fi-rs-bookmark recipes_activities recipes_bookmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="recipes">
+            <a href="https://easymeals.qodeinteractive.com/recipe/slow-cooker-apple-cinnamon-oatmeal-pot/"><img
+                    src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-2.jpg" alt=""
+                    class="recipes_image" /></a>
+            <div class="recipes_tag">
+                <p class="recipes_time">
+                    <i class="fi fi-tr-clock-three"></i> 30 minutes
+                </p>
+                <p class="recipes_difficulty">
+                    <i class="fi fi-rs-social-network"></i> super easy
+                </p>
+            </div>
+            <p class="recipes_title">
+                <a href="https://easymeals.qodeinteractive.com/recipe/slow-cooker-apple-cinnamon-oatmeal-pot/">Slow
+                    cooker apple cinnamon oatmeal pot</a>
+            </p>
+            <p class="recipes_description">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqut enim ad minim
+                veniamquis
+            </p>
+            <div class="recipes_author">
+                <a href="https://easymeals.qodeinteractive.com/author/erica-james/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Author Image/author-img-5-100x100.png" alt=""
+                        class="recipes_author_avatar" id="xx" /></a>
+                <div class="recipes_author_info">
+                    <p class="recipes_author_name">
+                        <a href="https://easymeals.qodeinteractive.com/author/erica-james/">erica james</a>
+                    </p>
+                    <p class="recipes_date">may 20, 2020</p>
+                </div>
+                <div class="recipes1_activities">
+                    <i class="fi fi-rs-share recipes_activities recipes_heart"></i>
+                    <i class="fi fi-rs-bookmark recipes_activities recipes_bookmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="recipes">
+            <a href="https://easymeals.qodeinteractive.com/recipe/fudge-waffles-with-ice-cream-and-chocolate-sauce/"><img
+                    src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-3.jpg" alt=""
+                    class="recipes_image" /></a>
+            <div class="recipes_tag">
+                <p class="recipes_time">
+                    <i class="fi fi-tr-clock-three"></i> 30 minutes
+                </p>
+                <p class="recipes_difficulty">
+                    <i class="fi fi-rs-social-network"></i> super easy
+                </p>
+            </div>
+            <p class="recipes_title">
+                <a
+                    href="https://easymeals.qodeinteractive.com/recipe/fudge-waffles-with-ice-cream-and-chocolate-sauce/">Fudge
+                    waffles with ice cream and chocolate sauce</a>
+            </p>
+            <p class="recipes_description">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqut enim ad minim
+                veniamquis
+            </p>
+            <div class="recipes_author">
+                <a href="https://easymeals.qodeinteractive.com/author/sophia-vargas/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Author Image/author-img-3-100x100.png" alt=""
+                        class="recipes_author_avatar" /></a>
+                <div class="recipes_author_info">
+                    <p class="recipes_author_name">
+                        <a href="https://easymeals.qodeinteractive.com/author/sophia-vargas/">sophia vargas</a>
+                    </p>
+                    <p class="recipes_date">may 20, 2020</p>
+                </div>
+                <div class="recipes1_activities">
+                    <i class="fi fi-rs-share recipes_activities recipes_heart"></i>
+                    <i class="fi fi-rs-bookmark recipes_activities recipes_bookmark"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="books">
+        <p id="books_title">Check out my <u>newest</u> vegan recipes books</p>
+        <p id="books_description">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore
+        </p>
+        <div id="books_list">
+            <a href="https://easymeals.qodeinteractive.com/product/feast/"><img
+                    src="/JSB-01/Project/Sources/Assets/Image/Books Image/h3-img-5.png" alt="" class="book" /></a>
+            <a href="https://easymeals.qodeinteractive.com/product/healthy/"><img
+                    src="/JSB-01/Project/Sources/Assets/Image/Books Image/h3-img-6.png" alt="" class="book" /></a>
+            <a href="https://easymeals.qodeinteractive.com/product/healthy-snacks/"><img
+                    src="/JSB-01/Project/Sources/Assets/Image/Books Image/h3-img-7.png" alt="" class="book" /></a>
+        </div>
+        <div id="recent_recipes_title">
+            <p id="recent_recipe_title">Recent recipes</p>
+            <div id="line"></div>
+        </div>
+    </div>
+    <div id="recent_recipes">
+        <div id="recent_posts">
+            <article>
+                <a
+                    href="https://easymeals.qodeinteractive.com/recipe/the-best-fluffy-buttermilk-pancakes-with-triple-berry-sauce/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-11.jpg" alt=""
+                        class="article_image" /></a>
+                <div class="post_detail">
+                    <p class="article_tag">
+                        <i class="fi fi-ts-video-camera-alt"></i> 0:38
+                    </p>
+                    <a href="https://easymeals.qodeinteractive.com/recipe/the-best-fluffy-buttermilk-pancakes-with-triple-berry-sauce/"
+                        class="article_title">
+                        <p>
+                            The best fluffy buttermilk pancakes with triple berry sauce
+                        </p>
+                    </a>
+                    <p class="article_description">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+                        mi
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a href="https://easymeals.qodeinteractive.com/recipe/chocolate-banana-pancakes/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-12.jpg" alt=""
+                        class="article_image" /></a>
+                <div class="post_detail">
+                    <div class="post_tag">
+                        <p class="article_tag">
+                            <i class="fi fi-tr-clock-five"></i> 30 minutes
+                        </p>
+                        <p class="article_tag x">
+                            <i class="fi fi-rs-social-network"></i> super easy
+                        </p>
+                    </div>
+                    <a href="https://easymeals.qodeinteractive.com/recipe/chocolate-banana-pancakes/"
+                        class="article_title">
+                        <p>Chocolate banana pancakes</p>
+                    </a>
+                    <p class="article_description">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+                        mi
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a
+                    href="https://easymeals.qodeinteractive.com/recipe/cinnamon-french-toast-with-cream-cheese-glaze-and-berry-syrup/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-13.jpg" alt=""
+                        class="article_image" /></a>
+                <div class="post_detail">
+                    <p class="article_tag">
+                        <i class="fi fi-ts-video-camera-alt"></i> 0:38
+                    </p>
+                    <a href="https://easymeals.qodeinteractive.com/recipe/cinnamon-french-toast-with-cream-cheese-glaze-and-berry-syrup/"
+                        class="article_title">
+                        <p>
+                            Cinnamon french toast with cream cheese glaze and berry syrup
+                        </p>
+                    </a>
+                    <p class="article_description">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+                        mi
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a href="https://easymeals.qodeinteractive.com/recipe/peanut-butter-pancakes/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-14.jpg" alt=""
+                        class="article_image" /></a>
+                <div class="post_detail">
+                    <div class="post_tag">
+                        <p class="article_tag">
+                            <i class="fi fi-tr-clock-five"></i> 30 minutes
+                        </p>
+                        <p class="article_tag x">
+                            <i class="fi fi-rs-social-network"></i> super easy
+                        </p>
+                    </div>
+                    <a href="https://easymeals.qodeinteractive.com/recipe/peanut-butter-pancakes/"
+                        class="article_title">
+                        <p>Peanut butter pancakes</p>
+                    </a>
+                    <p class="article_description">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+                        mi
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a
+                    href="https://easymeals.qodeinteractive.com/recipe/traditional-french-breakfast-croissant-and-coffee/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-15.jpg" alt=""
+                        class="article_image" /></a>
+                <div class="post_detail">
+                    <p class="article_tag">
+                        <i class="fi fi-ts-video-camera-alt"></i> 0:38
+                    </p>
+                    <a href="https://easymeals.qodeinteractive.com/recipe/traditional-french-breakfast-croissant-and-coffee/"
+                        class="article_title">
+                        <p>
+                            Traditional French breakfast croissant and coffee
+                        </p>
+                    </a>
+                    <p class="article_description">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+                        mi
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a href="https://easymeals.qodeinteractive.com/recipe/one-pot-pasta-primavera/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-16.jpg" alt=""
+                        class="article_image" /></a>
+                <div class="post_detail">
+                    <div class="post_tag">
+                        <p class="article_tag">
+                            <i class="fi fi-tr-clock-five"></i> 30 minutes
+                        </p>
+                        <p class="article_tag x">
+                            <i class="fi fi-rs-social-network"></i> super easy
+                        </p>
+                    </div>
+                    <a href="https://easymeals.qodeinteractive.com/recipe/one-pot-pasta-primavera/"
+                        class="article_title">
+                        <p>One-pot pasta primavera</p>
+                    </a>
+                    <p class="article_description">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+                        mi
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a
+                    href="https://easymeals.qodeinteractive.com/recipe/quick-easy-chocolate-cake-with-berries-from-scratch-recipe/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-17.jpg" alt=""
+                        class="article_image" /></a>
+                <div class="post_detail">
+                    <p class="article_tag">
+                        <i class="fi fi-ts-video-camera-alt"></i> 0:38
+                    </p>
+                    <a href="https://easymeals.qodeinteractive.com/recipe/quick-easy-chocolate-cake-with-berries-from-scratch-recipe/"
+                        class="article_title">
+                        <p>
+                            Quick & easy chocolate cake with berries from scratch recipe
+                        </p>
+                    </a>
+                    <p class="article_description">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+                        mi
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a href="https://easymeals.qodeinteractive.com/recipe/carrot-and-walnut-cake/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-18.jpg" alt=""
+                        class="article_image" /></a>
+                <div class="post_detail">
+                    <div class="post_tag">
+                        <p class="article_tag">
+                            <i class="fi fi-tr-clock-five"></i> 30 minutes
+                        </p>
+                        <p class="article_tag x">
+                            <i class="fi fi-rs-social-network"></i> super easy
+                        </p>
+                    </div>
+                    <a href="https://easymeals.qodeinteractive.com/recipe/carrot-and-walnut-cake/"
+                        class="article_title">
+                        <p>Carrot and walnut cake</p>
+                    </a>
+                    <p class="article_description">
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+                        mi
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div id="sidebar">
+            <div id="categories">
+                <p id="category">categories</p>
+                <a href="https://easymeals.qodeinteractive.com/recipe-category/popular/"><button
+                        class="categories up"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Button Image/categories-img-8.png"
+                            alt="">Popular</button></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe-category/pizza/"><button
+                        class="categories up"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Button Image/categories-img-2.png"
+                            alt="">Pizza</button></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe-category/meat/"><button class="categories up"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Button Image/categories-img-5.png"
+                            alt="">Meat</button></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe-category/lunch/"><button
+                        class="categories down"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Button Image/categories-img-4.png"
+                            alt="">Lunch</button></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe-category/greens/"><button
+                        class="categories down"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Button Image/categories-img-1.png"
+                            alt="">Greens</button></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe-category/desserts/"><button
+                        class="categories down"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Button Image/categories-img-7.png"
+                            alt="">Desserts</button></a>
+            </div>
+            <div id="updates">
+                <p id="updates_title">never miss a post</p>
+                <p id="updates_description">Sign up for free and be the first to get notified about updates.</p>
+                <input type="email" placeholder="Your Email *" id="email_input">
+                <p id="error">⠀</p>
+                <button id="subscribe" onclick="newsletter()">subscribe</button>
+            </div>
+            <div id="lastest_recipes">
+                <p id="lastest_recipe">lastest recipes</p>
+                <div class="lastest_recipes">
+                    <a href="https://easymeals.qodeinteractive.com/recipe/cupcakes-with-coconut-oil/"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-34-300x213.jpg" alt=""
+                            class="lastest_recipes_image"></a>
+                    <div class="lastest_recipes_detail">
+                        <a href="https://easymeals.qodeinteractive.com/recipe/cupcakes-with-coconut-oil/"
+                            class="lastest_recipes_title">
+                            <p>Cupcakes with coconut oil</p>
+                        </a>
+                        <p class="lastest_recipes_date">June 10, 2020</p>
+                    </div>
+                </div>
+                <div class="lastest_recipes">
+                    <a href="https://easymeals.qodeinteractive.com/recipe/easy-breakfast-meal-prep/"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-35-300x213.jpg" alt=""
+                            class="lastest_recipes_image"></a>
+                    <div class="lastest_recipes_detail">
+                        <a href="https://easymeals.qodeinteractive.com/recipe/easy-breakfast-meal-prep/"
+                            class="lastest_recipes_title">
+                            <p>Easy breakfast meal prep</p>
+                        </a>
+                        <p class="lastest_recipes_date">June 10, 2020</p>
+                    </div>
+                </div>
+                <div class="lastest_recipes">
+                    <a href="https://easymeals.qodeinteractive.com/recipe/brownies-with-walnuts-and-caramel/"><img
+                            src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-36-300x213.jpg" alt=""
+                            class="lastest_recipes_image"></a>
+                    <div class="lastest_recipes_detail">
+                        <a href="https://easymeals.qodeinteractive.com/recipe/brownies-with-walnuts-and-caramel/"
+                            class="lastest_recipes_title">
+                            <p>Brownies with walnuts</p>
+                        </a>
+                        <p class="lastest_recipes_date">June 10, 2020</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#"><img src="/JSB-01/Project/Sources/Assets/Image/Sidebar Image/sidebar-img-1.jpg" alt=""
+                    class="sidebar_image"></a>
+            <p id="socials">follow me</p>
+            <div id="soci">
+                <a href="https://www.instagram.com/QodeInteractive/?_ga=2.180626722.424795386.1668695321-520727003.1667702456"
+                    class="soci"><i class="fi fi-brands-instagram"></i></a>
+                <a href="https://twitter.com/qodeinteractive?_ga=2.177350688.424795386.1668695321-520727003.1667702456"
+                    class="soci"><i class="fi fi-brands-twitter"></i></a>
+                <a href="https://www.facebook.com/QodeInteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                    class="soci"><i class="fi fi-brands-facebook"></i></a>
+                <a href="https://www.pinterest.com/qodeinteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                    class="soci"><i class="fi fi-brands-pinterest"></i></a>
+                <a href="https://www.youtube.com/QodeInteractiveVideos?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                    class="soci"><i class="fi fi-brands-youtube"></i></a>
+                <a href="https://linkedin.com" class="social"><i class="fi fi-brands-linkedin"></i></a>
+            </div>
+            <a href="#"><img src="/JSB-01/Project/Sources/Assets/Image/Sidebar Image/h3-sidebar-img-1.png" alt=""
+                    class="sidebar_image"></a>
+        </div>
+    </div>
+    <div id="video">
+        <p id="video_title">New Recipes Every Wednesday</p>
+        <p id="video_description">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor dunt ut labore et dolore magna aliqut enim ad minim veniamquis
+            nostrud exercitation
+        </p>
+        <div id="video_container">
+            <iframe width="550" height="300" src="https://www.youtube.com/embed/_tmq1PT_88c"
+                title="CREAMY MUSHROOM CREPES IN JUST 15 MINUTES" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="550" height="300" src="https://www.youtube.com/embed/P3dL1m1jhmk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="sponsor">
+        <a href="#"><img src="/JSB-01/Project/Sources/Assets/Image/Sponsor Image/h1-clients-img-1.png" alt=""></a>
+        <a href="#"><img src="/JSB-01/Project/Sources/Assets/Image/Sponsor Image/h1-clients-img-2a.png" alt=""></a>
+        <a href="#"><img src="/JSB-01/Project/Sources/Assets/Image/Sponsor Image/h1-clients-img-3a.png" alt=""></a>
+        <a href="#"><img src="/JSB-01/Project/Sources/Assets/Image/Sponsor Image/h1-clients-img-4a.png" alt=""></a>
+        <a href="#"><img src="/JSB-01/Project/Sources/Assets/Image/Sponsor Image/h1-clients-img-5a.png" alt=""></a>
+        <a href="#"><img src="/JSB-01/Project/Sources/Assets/Image/Sponsor Image/h1-clients-img-6a.png" alt=""></a>
+    </div>
+    <div id="weeks_recipes">
+        <div id="weeks_recipes_title_container">
+            <div class="line"></div>
+            <p id="weeks_recipes_title">The most popular recipes this week</p>
+            <div class="line"></div>
+        </div>
+        <div id="week_recipes_list">
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/marshmallow-light-and-easy-cake/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-22.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href=https://easymeals.qodeinteractive.com/recipe/marshmallow-light-and-easy-cake/"
+                    class="recipe_title">
+                    <p>Marshmallow light and easy cake</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/cupcakes-with-pistachio-pudding/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-23.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/cupcakes-with-pistachio-pudding/"
+                    class="recipe_title">
+                    <p>Cupcakes with pistachio pudding</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/baked-chicken-legs-with-garlic-and-dijon/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-24.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/baked-chicken-legs-with-garlic-and-dijon/"
+                    class="recipe_title">
+                    <p>Baked chicken legs with garlic and Dijon</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/french-onion-soup-with-veggie-stock/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-25.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/french-onion-soup-with-veggie-stock/"
+                    class="recipe_title">
+                    <p>French onion soup with veggie stock</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/make-chicken-paella-in-under-an-hour/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-26.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/make-chicken-paella-in-under-an-hour/"
+                    class="recipe_title">
+                    <p>Make chicken paella in under an hour</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/pumpkin-soup-with-cheese-and-cinnamon/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-27.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/pumpkin-soup-with-cheese-and-cinnamon/"
+                    class="recipe_title">
+                    <p>Pumpkin soup with cheese and cinnamon</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/easy-ground-beef-recipes-with-bacon/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-28.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/easy-ground-beef-recipes-with-bacon/"
+                    class="recipe_title">
+                    <p>Easy ground beef recipes with bacon</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/avocado-toast-with-valerianella-and-egg/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-29.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/avocado-toast-with-valerianella-and-egg/"
+                    class="recipe_title">
+                    <p>Avocado toast with valerianella and egg</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/how-to-make-fast-margherita-pizza/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-30.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/how-to-make-fast-margherita-pizza/"
+                    class="recipe_title">
+                    <p>How to make fast margherita pizza</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/avocado-toast-with-spinach-and-egg/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-31.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/avocado-toast-with-spinach-and-egg/"
+                    class="recipe_title">
+                    <p>Avocado toast with spinach and egg</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/deliciously-spicy-thai-chili-crab-recipe/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-32.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/deliciously-spicy-thai-chili-crab-recipe/"
+                    class="recipe_title">
+                    <p>Deliciously spicy Thai chili crab recipe</p>
+                </a>
+            </div>
+            <div class="recipe">
+                <a href="https://easymeals.qodeinteractive.com/recipe/creamy-potato-soup-with-almond-milk/"><img
+                        src="/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-33.jpg" alt=""
+                        class="recipe_image" /></a>
+                <a href="https://easymeals.qodeinteractive.com/recipe/creamy-potato-soup-with-almond-milk/"
+                    class="recipe_title">
+                    <p>Creamy potato soup with almond milk</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="forum">
+        <p id="forum_title">Easy Meals <u>Forum</u></p>
+        <p id="forum_description">
+            186.281 users, 184.853 recipes, 1.432.915 photos
+        </p>
+        <button id="join_button"><a href="https://easymeals.qodeinteractive.com/forums/">JOIN NOW</a></button>
+    </div>
+    <footer>
+        <p id="copyright">© 2020 Qode Interactive, All Rights Reserved</p>
+        <div id="navigation">
+            <a href="https://easymeals.qodeinteractive.com/" class="link">home</a>
+            <a href="https://easymeals.qodeinteractive.com/all-recipes/" class="link">recipes</a>
+            <a href="https://easymeals.qodeinteractive.com/shop/" class="link">shop</a>
+            <a href="https://easymeals.qodeinteractive.com/about/" class="link">about</a>
+            <a href="https://easymeals.qodeinteractive.com/contact/" class="link">contact</a>
+        </div>
+        <div id="soc">
+            <a href="https://www.instagram.com/QodeInteractive/?_ga=2.180626722.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-instagram"></i></a>
+            <a href="https://twitter.com/qodeinteractive?_ga=2.177350688.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-twitter"></i></a>
+            <a href="https://www.facebook.com/QodeInteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-facebook"></i></a>
+            <a href="https://www.pinterest.com/qodeinteractive/?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-pinterest"></i></a>
+            <a href="https://www.youtube.com/QodeInteractiveVideos?_ga=2.202057364.424795386.1668695321-520727003.1667702456"
+                class="social"><i class="fi fi-brands-youtube"></i></a>
+            <a href="https://linkedin.com" class="social"><i class="fi fi-brands-linkedin"></i></a>
+        </div>
+    </footer>
+    <button id="top" onclick="scrollToTop()"><i class="fi fi-ss-angle-up"></i></button>
+    <script src="/JSB-01/Project/Sources/Script/JavaScript/script.js"></script>
+</body>
+
+</html>

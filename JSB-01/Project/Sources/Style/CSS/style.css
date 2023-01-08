@@ -1,0 +1,923 @@
+* {
+    /* CSS Reset */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Catamaran-Regular;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-Regular.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-Semibold;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Merriweather-Regular;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Merriweather/Merriweather-Regular.ttf);
+}
+
+::selection {
+    background: #fee86d;
+    color: #fff;
+}
+
+#i {
+    margin-left: 10%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.x {
+    margin-left: 15px;
+}
+
+#xx {
+    width: 42px;
+    height: 42px;
+    margin-right: 5px;
+}
+
+#recent_recipes_title {
+    position: absolute;
+    top: 343%;
+    display: flex;
+}
+
+#recent_recipe_title {
+    font-family: Merriweather-Regular;
+    font-size: 20px;
+}
+
+#line {
+    border-top: 1px solid #eae9e7;
+    border-bottom: 1px solid #eae9e7;
+    width: 940px;
+    height: 7px;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+header {
+    display: flex;
+    margin-top: 2%;
+    padding: 1% 10% 40px;
+    width: 100%;
+    font-family: Catamaran-Regular;
+    border-bottom: 1px #ddd solid;
+}
+
+#logo {
+    width: 210px;
+}
+
+#search {
+    margin-left: 18%;
+    border: 1px #ccc solid;
+    width: 50%;
+    height: 48px;
+}
+
+#search_bar_button {
+    background-color: #fee86d;
+    height: 100%;
+    width: auto;
+    float: right;
+    width: 13%;
+    padding-top: 2px;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+#search_bar_button:hover {
+    background-color: #fbdd33;
+}
+
+#searchInput {
+    height: 101%;
+    width: 85%;
+    outline: 0;
+    padding-left: 5%;
+}
+
+#search_bar::placeholder {
+    color: #111;
+    font-size: 14px;
+}
+
+#search_bar {
+    height: 100%;
+}
+
+#favorites {
+    margin-left: 2%;
+    text-decoration: none;
+    font-weight: 400;
+    color: #6b6768;
+    font-size: 15px;
+}
+
+#opt {
+    width: 30%;
+    height: 100%;
+    padding-top: 15px;
+    margin-left: 3%;
+    display: flex;
+}
+
+#cart {
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    font-weight: 400;
+    color: #6b6768;
+    font-size: 15px;
+}
+
+#cart a {
+    color: #6b6768;
+    text-decoration: none;
+}
+
+#cart_dropdown {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding: 15px 20px;
+    z-index: 1;
+    border: 1px #ccc solid;
+    font-weight: 400;
+    color: #6b6768;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+#cart:hover #cart_dropdown {
+    display: block;
+}
+
+.nav_link {
+    text-decoration: none;
+    font-family: Catamaran-Regular;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #2d2d28;
+    letter-spacing: .1em;
+    line-height: 1.625em;
+    margin-right: 3%;
+    float: left;
+}
+
+.nav_link:hover {
+    color: #6b6768;
+}
+
+nav {
+    margin-left: 12%;
+    margin-top: 1%;
+    padding-bottom: 40px;
+}
+
+#star {
+    color: #fee86d;
+}
+
+.social {
+    margin-right: 8px;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+
+#social {
+    float: right;
+    margin-right: 11%;
+}
+
+#most_popular_recipes {
+    background-image: url("/JSB-01/Project/Sources/Assets/Image/Recipes Image/h3-img-37.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#detail {
+    background-color: #fff;
+    width: 34%;
+    height: 65%;
+    margin-left: 10%;
+    position: absolute;
+    margin-top: 9%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 34px;
+}
+
+#tags {
+    display: flex;
+    min-width: 100px;
+    font-family: Catamaran-Semibold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#tag {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #060606;
+}
+
+#tag:hover {
+    color: #6b6768;
+}
+
+#name {
+    font-size: 50px;
+    font-family: Merriweather-Regular;
+    color: #060606;
+    text-decoration: none;
+}
+
+#name:hover {
+    color: #06061C;
+}
+
+#description {
+    font-family: Catamaran-Regular;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6b6768;
+    margin-top: 5%;
+}
+
+#avatar {
+    position: absolute;
+    left: 13%;
+    top: 102%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+#info {
+    position: absolute;
+    left: 17%;
+    top: 650px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#author_name {
+    color: #060606;
+    text-transform: uppercase;
+    font-family: Catamaran-Semibold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#author_name:hover {
+    color: #6b6768;
+}
+
+#date {
+    color: #6b6768;
+    font-family: Catamaran-Regular;
+    text-transform: capitalize;
+}
+
+.activity {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    padding: 1% 1% 10px 1%;
+    position: absolute;
+    top: 102%;
+}
+
+#heart {
+    left: 34%;
+}
+
+#bookmark {
+    left: 38%;
+}
+
+#popular_recipes {
+    height: 100vh;
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipes_image {
+    max-width: 345px;
+    max-height: 240px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.recipes_image:hover {
+    transform: scale(1.05);
+}
+
+.recipes_tag {
+    text-transform: uppercase;
+    font-family: Catamaran-Semibold;
+    font-size: 13px;
+    display: flex;
+    margin-top: 1%;
+}
+
+.recipes_difficulty {
+    margin-left: 5%;
+}
+
+.recipes_title a {
+    font-family: Merriweather-Regular;
+    font-weight: 200;
+    color: #060606;
+    font-size: 23px;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.recipes_title {
+    margin-top: 2%;
+}
+
+.recipes_title a:hover {
+    color: #6b6768;
+}
+
+.recipes {
+    width: 346px;
+}
+
+.recipes_description {
+    font-family: Catamaran-Regular;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #6b6768;
+    margin-top: 5%;
+}
+
+.recipes_author_avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.recipes_author_info {
+    font-size: 13px;
+    font-weight: 400;
+    width: 109px;
+}
+
+.recipes_author_name {
+    text-transform: uppercase;
+    font-family: Catamaran-Semibold;
+    letter-spacing: 1px;
+}
+
+.recipes_author_name a {
+    text-decoration: none;
+    color: #060606;
+}
+
+.recipes_author_name a:hover {
+    color: #6b6768;
+}
+
+.recipes_date {
+    color: #6b6768;
+    font-family: Catamaran-Regular;
+    text-transform: capitalize;
+}
+
+.activity {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    padding: 1% 1% 10px 1%;
+}
+
+.recipes_author {
+    display: flex;
+    margin-top: 5%;
+}
+
+.recipes1_activities {
+    display: flex;
+    margin-left: 20%;
+}
+
+.recipes_activities {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    padding: 15px 15px 10px 15px;
+    margin-left: 20%;
+}
+
+#books {
+    height: 100vh;
+    background-image: url("/JSB-01/Project/Sources/Assets/Image/Background Image/h3-img-4.jpg");
+    background-size: 110vw 100vh;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 45%;
+}
+
+u {
+    text-decoration-color: #fee86d;
+}
+
+#books_title {
+    font-family: Merriweather-Regular;
+
+    font-size: 60px;
+    word-wrap: break-word;
+    margin-bottom: 5%;
+}
+
+#books_description {
+    font-family: Catamaran-Regular;
+    font-size: 18px;
+    color: #6b6768;
+    line-height: 1.625em;
+}
+
+#books_list {
+    display: flex;
+}
+
+.book {
+    width: auto;
+    height: 220px;
+    margin-left: 0;
+}
+
+#recent_recipes {
+    height: 350vh;
+    display: flex;
+    padding-top: 8%;
+    padding-left: 160px;
+    width: 100%;
+}
+
+#recent_posts {
+    width: 720px;
+    margin-top: 30px;
+}
+
+#sidebar {
+    margin-right: 150px;
+    margin-left: 25px;
+    width: 350px;
+}
+
+.article_image {
+    width: 329px;
+    height: auto;
+    transition: all 1s ease;
+}
+
+.article_image:hover {
+    transform: scale(1.05);
+}
+
+article {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.post_detail {
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.article_title {
+    font-family: Merriweather-Regular;
+    color: #060606;
+    font-size: 23px;
+    line-height: 1.5em;
+    margin-top: 2%;
+}
+
+.article_title :hover {
+    color: #6b6768;
+}
+
+.article_description {
+    font-family: Catamaran-Regular;
+    font-size: 16px;
+    color: #6b6768;
+    margin-top: 2%;
+}
+
+.article_tag {
+    font-family: Catamaran-Semibold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.post_tag {
+    display: flex;
+}
+
+#video {
+    height: 100vh;
+    background-image: url("/JSB-01/Project/Sources/Assets/Image/Background Image/h3-img-10.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% top;
+    background-size: 120% 75vh;
+}
+
+#categories {
+    border: 1px solid #eae9e7;
+}
+
+#video {
+    text-align: center;
+    padding-top: 7%;
+}
+
+#video_title {
+    font-family: Merriweather-Regular;
+
+    font-size: 35px;
+    margin-bottom: 3%;
+}
+
+#video_description {
+    font-family: Catamaran-Regular;
+    font-size: 18px;
+    color: #6b6768;
+    padding-left: 370px;
+    padding-right: 370px;
+}
+
+#video_container {
+    margin-top: 5%;
+}
+
+iframe {
+    margin-left: 2%;
+}
+
+#sponsor {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#weeks_recipes_title_container {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    border-top: 1px solid #eae9e7;
+    border-bottom: 1px solid #eae9e7;
+    height: 7px;
+    width: 387px;
+    margin-top: 10px;
+}
+
+#weeks_recipes {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+#weeks_recipes_title {
+    font-family: Merriweather-Regular;
+
+    font-size: 20px;
+}
+
+.recipe_image {
+    width: 165px;
+    height: 115px;
+    transition: all 1s ease;
+}
+
+.recipe_image:hover {
+    transform: scale(1.05);
+}
+
+.recipe {
+    width: 165px;
+    height: 195px;
+    margin-left: 2%;
+}
+
+#week_recipes_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.recipe_title {
+    font-family: Merriweather-Regular;
+    font-size: 15px;
+    line-height: 1.625em;
+    color: #060606;
+    text-decoration: none;
+}
+
+.recipe_title:hover {
+    color: #6b6768;
+}
+
+#forum {
+    border: 3px dashed #eae9e7;
+    height: 225px;
+    width: 1100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    background-image: url("/JSB-01/Project/Sources/Assets/Image/Background Image/h2-img-10.png");
+    background-size: 100% 100%;
+    padding-top: 3%;
+}
+
+#forum_title {
+    font-family: Merriweather-Regular;
+    font-size: 32px;
+    margin-bottom: 1%;
+}
+
+#forum_description {
+    font-family: Merriweather-Regular;
+    font-size: 20px;
+    color: #060606;
+    margin-bottom: 2%;
+}
+
+#join_button {
+    padding: 12px 38px 11px;
+    background-color: #fee86d;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+#join_button:hover {
+    background-color: #fbdd33;
+}
+
+#join_button a {
+    text-decoration: none;
+    color: #060606;
+    font-family: Catamaran-Semibold;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+footer {
+    display: flex;
+    padding-left: 10%;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+#copyright {
+    font-family: Catamaran-Regular;
+    font-size: 16px;
+    margin-right: 10%;
+}
+
+#navigation {
+    width: 290px;
+}
+
+.link {
+    text-decoration: none;
+    font-family: Catamaran-Regular;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #2d2d28;
+    letter-spacing: .1em;
+    margin-right: 3%;
+    transition: all 0.25s linear;
+}
+
+.link:hover {
+    color: #6b6768;
+}
+
+#soc {
+    margin-left: 20%;
+}
+
+article a {
+    text-decoration: none;
+}
+
+#top {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    background-color: #fee86d;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: all 0.25s linear;
+}
+
+#top:hover {
+    background-color: #fbdd33;
+}
+
+.categories {
+    background-color: #fff;
+    width: 100px;
+    font-family: Merriweather-Regular;
+    font-size: 16px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.categories img {
+    transition: all 0.1s linear;
+}
+
+.categories:hover img {
+    transform: translateY(-5px);
+}
+
+.up {
+    margin-top: 50px;
+}
+
+.down {
+    margin-bottom: 50px;
+}
+
+#category {
+    width: 30px;
+    margin-top: -10px;
+    margin-left: 120px;
+    background-color: #fff;
+    padding: 0px 70px 0px 0px;
+    font-family: Catamaran-Regular;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+#categories {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+#updates {
+    background-color: #f7f7f7;
+    margin-top: 40px;
+    padding: 50px 45px 40px 45px;
+    text-align: center;
+}
+
+#updates_title {
+    font-family: Merriweather-Regular;
+    font-size: 23px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+#updates_description {
+    font-family: Catamaran-Regular;
+    font-size: 16px;
+    color: #6b6768;
+    margin-bottom: 30px;
+}
+
+#email_input {
+    padding: 15px 45px 15px 25px;
+    outline: none;
+    width: 220px;
+    font-family: Catamaran-Regular;
+    margin-bottom: 10px;
+}
+
+#subscribe {
+    background-color: #000;
+    color: #fff;
+    font-family: Catamaran-Semibold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 15px 75px 15px 75px;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+#subscribe:hover {
+    background-color: #2f2f2f;
+}
+
+#lastest_recipes {
+    margin-top: 40px;
+    border: 1px solid #eae9e7;
+    padding: 40px 40px 30px 40px;
+}
+
+.lastest_recipes {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.lastest_recipes_image {
+    width: 110px;
+    margin-right: 25px;
+    transition: all 1s ease;
+}
+
+.lastest_recipes_image:hover {
+    transform: scale(1.05);
+}
+
+.lastest_recipes_title {
+    font-family: Merriweather-Regular;
+    font-family: 16px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #000;
+}
+
+.lastest_recipes_title:hover {
+    color: #6b6768;
+}
+
+.lastest_recipes_date {
+    font-family: Catamaran-Regular;
+    color: #7b7b7b;
+    font-size: 14px;
+}
+
+#lastest_recipe {
+    width: 110px;
+    text-align: center;
+    position: absolute;
+    top: 3017px;
+    margin-left: 90px;
+    background-color: #fff;
+    font-family: Catamaran-Regular;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.sidebar_image {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#soci {
+    border: 1px solid #eae9e7;
+    padding: 30px 35px 30px 35px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.soci {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+#socials {
+    width: 75px;
+    text-align: center;
+    position: absolute;
+    top: 3723px;
+    margin-left: 140px;
+    background-color: #fff;
+    font-family: Catamaran-Regular;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+#error {
+    font-family: Catamaran-Regular;
+    color: #f00;
+    margin-bottom: 0px;
+    transition: all 0.25s linear;
+}

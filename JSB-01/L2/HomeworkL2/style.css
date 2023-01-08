@@ -1,0 +1,44 @@
+@font-face{
+    font-family: CelebrateScript;
+    src: url(CelebrateScript.otf);
+}
+@font-face{
+    font-family: FirstSchool;
+    src: url(FirstSchool.otf);
+}
+div{
+    height: 100vh;
+    width: 100%;
+    border: 5px black solid;
+    text-align: center;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-content: center;
+}
+h2{
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 85px;
+}
+h1{
+    font-family: CelebrateScript;
+    font-size: 56px;
+    font-weight: 100;
+}
+.at{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 800; 
+}
+.time{
+    font-family: FirstSchool;
+    font-size: 35px;
+}
+.address{
+    font-family: FirstSchool;
+    font-size: 35px;
+    word-wrap: break-word;
+}

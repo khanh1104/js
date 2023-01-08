@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Band</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/a0de807aef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="nav">
+    <a class="link" href="#">HOME</a>
+    <a class="link" href="#band">BAND</a>
+    <a class="link" href="#tour">TOUR</a>
+    <a class="link" href="#contact">CONTACT</a>
+    <a class="link" href="#">MORE <span><i class="fa-sharp fa-solid fa-caret-down"></i></span></a>
+    <a class="link" style="float: right" href="#search" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+  </div>
+  <div id="home">
+    <h1 id="city">Los Angeles</h1>
+    <p id="desc">We had the best time playing at Venice Beach!</p>
+  </div>
+  <div id="band">
+    <h1 class="band_text title">THE BAND</h1>
+    <p class="band_text p" id="band_p">We love music</p>
+    <p class="band_text" id="paragraph">
+      We have created a fictional band website. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <div id="band_member">
+      <div class="member">
+        <p class="band_member_name">Name</p>
+        <img src="/L4/Assets/Image/img_bandmember.jpg" alt="band_member_img" class="band_member_img" />
+      </div>
+      <div class="member">
+        <p class="band_member_name">Name</p>
+        <img src="/L4/Assets/Image/img_bandmember.jpg" alt="band_member_img" class="band_member_img" />
+      </div>
+      <div class="member">
+        <p class="band_member_name">Name</p>
+        <img src="/L4/Assets/Image/img_bandmember.jpg" alt="band_member_img" class="band_member_img" />
+      </div>
+    </div>
+  </div>
+  <div id="tour">
+    <h1 class="title" id="tour_title">TOUR DATES</h1>
+    <p class="p" id="tour_p">Remember to book your tickets!</p>
+    <div id="month_list">
+      <div class="month" id="September">
+        <p class="month_text">September</p>
+        <p class="sold_out">Sold out</p>
+      </div>
+      <div class="month" id="October">
+        <p class="month_text">October</p>
+        <p class="sold_out">Sold out</p>
+      </div>
+      <div class="month" id="November">
+        <p class="month_text">November</p>
+        <p id="remain_tickets">3</p>
+      </div>
+    </div>
+    <div id="concert_place">
+      <div class="place" id="new_york">
+        <img src="/L4/Assets/Image/newyork.jpg" alt="new_york" class="place_image" />
+        <p class="place_name">New York</p>
+        <p class="concert_time">Fri 27 Nov 2016</p>
+        <p class="concert_description">
+          Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+        </p>
+        <button class="buy_button"><a href="#">Buy Tickets</a></button>
+      </div>
+      <div class="place" id="paris">
+        <img src="/L4/Assets/Image/paris.jpg" alt="paris" class="place_image" />
+        <p class="place_name">Paris</p>
+        <p class="concert_time">Sat 28 Nov 2016</p>
+        <p class="concert_description">
+          Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+        </p>
+        <button class="buy_button"><a href="#">Buy Tickets</a></button>
+      </div>
+      <div class="place" id="san_francisco">
+        <img src="/L4/Assets/Image/sanfran.jpg" alt="san_francisco" class="place_image" />
+        <p class="place_name">San Francisco</p>
+        <p class="concert_time">Sun 29 Nov 2016</p>
+        <p class="concert_description">
+          Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+        </p>
+        <button class="buy_button"><a href="#">Buy Tickets</a></button>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <h1 class="title">CONTACT</h1>
+    <p class="p" id="contact_p">Fan? Drop a note</p>
+    <div id="contact_detail">
+      <div id="contact_info">
+        <div id="address" class="info">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="info_text">Chicago, US</p>
+        </div>
+        <div id="phone" class="info">
+          <i class="fa-solid fa-phone"></i>
+          <p class="info_text">Phone: +00 151515</p>
+        </div>
+        <div id="mail" class="info">
+          <i class="fa-solid fa-envelope"></i>
+          <p class="info_text">Email: mail@mail.com</p>
+        </div>
+      </div>
+      <div id="form">
+        <form action="/L4/sent.html">
+          <div id="form2">
+            <div id="form1">
+              <input type="text" placeholder="Name" required name="Name" id="name" class="input" />
+              <input type="email" placeholder="Email" required name="Email" id="email" class="input" />
+            </div>
+            <div id="message">
+              <input type="text" placeholder="Message" required name="Message" id="message" class="input" />
+            </div>
+          </div>
+          <button id="submit"><a>SEND</a></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="footer_img_container">
+    <img src="/L4/Assets/Image/map.jpg" alt="map" id="footer_img" />
+  </div>
+  <div id="footer">
+    <div id="platform">
+      <i class="fa-brands fa-square-facebook fa-lg icon"></i>
+      <i class="fa-brands fa-instagram fa-lg icon"></i>
+      <i class="fa-brands fa-snapchat fa-lg icon"></i>
+      <i class="fa-brands fa-pinterest fa-lg icon"></i>
+      <i class="fa-brands fa-twitter fa-lg icon"></i>
+      <i class="fa-brands fa-linkedin-in fa-lg icon"></i>
+    </div>
+    <div id="credit">
+      <p id="credit_text">
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

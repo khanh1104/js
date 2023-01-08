@@ -1,0 +1,362 @@
+* {
+    /* CSS Reset */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Catamaran-Regular;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-Regular.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-Semibold;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-Thin;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-Thin.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-Medium;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-Medium.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-Light;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-Light.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-ExtraLight;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-ExtraBold;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-Bold;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-Bold.ttf);
+}
+
+@font-face {
+    font-family: Catamaran-Black;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Catamaran/Catamaran-Black.ttf);
+}
+
+@font-face {
+    font-family: Merriweather-Regular;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Merriweather/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: Merriweather-Bold;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Merriweather/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family: Merriweather-Light;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family: Merriweather-Black;
+    src: url(/JSB-01/Project/Sources/Assets/Font/Merriweather/Merriweather-Black.ttf);
+}
+
+::selection {
+    background: #fee86d;
+    color: #fff;
+}
+
+#i {
+    margin-left: 10%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.x {
+    margin-left: 15px;
+}
+
+#xx {
+    width: 42px;
+    height: 42px;
+    margin-right: 5px;
+}
+
+#recent_recipes_title {
+    position: absolute;
+    top: 343%;
+    display: flex;
+}
+
+#recent_recipe_title {
+    font-family: Merriweather-Regular;
+    color: #060606;
+    font-size: 20px;
+}
+
+#line {
+    border-top: 1px solid #eae9e7;
+    border-bottom: 1px solid #eae9e7;
+    width: 940px;
+    height: 7px;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+header {
+    display: flex;
+    margin-top: 2%;
+    padding: 1% 10% 40px;
+    width: 100%;
+    font-family: Catamaran-Regular;
+    border-bottom: 1px #ddd solid;
+}
+
+#logo {
+    width: 210px;
+}
+
+#search {
+    margin-left: 18%;
+    border: 1px #ccc solid;
+    width: 50%;
+    height: 48px;
+}
+
+#search_bar_button {
+    background-color: #fee86d;
+    height: 100%;
+    width: auto;
+    float: right;
+    width: 13%;
+    padding-top: 2px;
+}
+
+#search_bar_button:hover {
+    cursor: pointer;
+}
+
+#searchInput {
+    height: 101%;
+    width: 85%;
+    outline: 0;
+    padding-left: 5%;
+}
+
+#search_bar::placeholder {
+    color: #111;
+    font-size: 14px;
+}
+
+#search_bar {
+    height: 100%;
+}
+
+#favorites {
+    margin-left: 2%;
+    text-decoration: none;
+    font-weight: 400;
+    color: #6b6768;
+    font-size: 15px;
+}
+
+#opt {
+    width: 30%;
+    height: 100%;
+    padding-top: 15px;
+    margin-left: 3%;
+    display: flex;
+}
+
+#cart {
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    font-weight: 400;
+    color: #6b6768;
+    font-size: 15px;
+}
+
+#cart a {
+    color: #6b6768;
+    text-decoration: none;
+}
+
+#cart_dropdown {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding: 15px 20px;
+    z-index: 1;
+    border: 1px #ccc solid;
+    font-weight: 400;
+    color: #6b6768;
+    font-size: 14px;
+    background-color: #fff;
+
+}
+
+#cart:hover #cart_dropdown {
+    display: block;
+}
+
+.nav_link {
+    text-decoration: none;
+    font-family: Catamaran-Regular;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #2d2d28;
+    letter-spacing: .1em;
+    line-height: 1.625em;
+    margin-right: 3%;
+    float: left;
+}
+
+nav {
+    margin-left: 12%;
+    margin-top: 1%;
+    padding-bottom: 40px;
+}
+
+#star {
+    color: #fee86d;
+}
+
+.social {
+    margin-right: 8px;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+
+#social {
+    float: right;
+    margin-right: 16%;
+}
+
+#main {
+    margin-top: 75px;
+    margin-bottom: 80px;
+}
+#main:not(#title){
+    font-family: Catamaran-Regular;
+    font-size: 16px;
+    color: #6b6768;
+}
+
+#title {
+    font-family: Merriweather-Regular;
+    color: #060606;
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin-left: 550px;
+}
+input:not(#searchInput, #remember){
+    display: block;
+}
+.input_container{
+    border: 1px solid #dddbdd;
+    width: 325px;
+    height: 50px;
+    padding-left: 25px;
+    padding-top: 12px;
+    margin-bottom: 15px;
+    margin-left: 550px;
+}
+.input{
+    outline: none;
+    width: 250px;
+}
+abbr{
+    text-decoration: none;
+}
+.sign{
+    position: absolute;
+    left: 830px;
+}
+#smile{
+    top: 330px;
+}
+#lock{
+    top: 395px;
+}
+#remember{
+    margin-left: 550px;
+    margin-bottom: 20px;
+}
+#submit{
+    margin-left: 550px;
+    padding: 10px 40px 10px 40px;
+    text-transform: uppercase;
+    font-family: Catamaran-Semibold;
+    letter-spacing: 1px;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.user{
+    color: #fee86d;
+}
+#forgot{
+    background-color: #fee86d;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-family: Catamaran-Semibold;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+footer {
+    display: flex;
+    padding-left: 10%;
+    width: 100%;
+    margin-top: 3%;
+}
+
+#copyright {
+    font-family: Catamaran-Regular;
+    font-size: 16px;
+    color: #060606;
+    margin-right: 10%;
+}
+
+#navigation {
+    width: 290px;
+}
+
+.link {
+    text-decoration: none;
+    font-family: Catamaran-Regular;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #2d2d28;
+    letter-spacing: .1em;
+    margin-right: 3%;
+}
+
+#soc {
+    margin-left: 20%;
+}
+#error{
+    margin-left: 550px;
+    margin-top: 20px;
+    color: #f00;
+    display: none;
+}
